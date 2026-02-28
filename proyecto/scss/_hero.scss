@@ -1,0 +1,24 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at top , #00C853, $bg-dark);
+
+  h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000000;
+    animation: fadeUp 1.5s ease forwards;
+  }
+
+  p {
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    animation: fadeUp 2.5s ease forwards;
+  }
+}

@@ -1,0 +1,35 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.637);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: $text-light;
+  transition: $transition;
+  background-color: black;
+  border-radius: 25px;
+  padding: 10px;
+  &:hover {
+    color: white;
+  }
+}
+
+body {
+  padding-top: 5px;
+}
