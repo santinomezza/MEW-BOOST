@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@
 body {
   font-family: "Inter", sans-serif;
   background: #ffffff;
-  color: #00C853;
+  color: #57a85C;
   overflow-x: hidden;
 }
 
@@ -21,7 +22,7 @@ section {
   background-color: rgba(0, 0, 0, 0.925);
   border-radius: 25px;
   padding: 10px;
-  color: #00C853;
+  color: #57a85C;
 }
 
 .h2secciones {
@@ -55,12 +56,13 @@ section {
 nav a {
   margin-left: 30px;
   text-decoration: none;
-  color: #00C853;
+  color: #57a85C;
   transition: all 0.3s ease;
   background-color: black;
   border-radius: 25px;
   padding: 10px;
 }
+
 nav a:hover {
   color: white;
 }
@@ -77,8 +79,9 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at top, #00C853, #ffffff);
+  background: radial-gradient(circle at top, #57a85C, #ffffff);
 }
+
 .hero h1 {
   font-size: 52px;
   font-weight: 700;
@@ -86,6 +89,7 @@ body {
   color: #000000;
   animation: fadeUp 1.5s ease forwards;
 }
+
 .hero p {
   color: rgb(0, 0, 0);
   margin-bottom: 30px;
@@ -116,12 +120,15 @@ body {
   transition: all 0.3s ease;
   border: 2px solid rgb(0, 0, 0);
 }
+
 .card h3 {
   margin-bottom: 15px;
 }
+
 .card p {
   color: #000000;
 }
+
 .card:hover {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
@@ -132,19 +139,23 @@ body {
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 @keyframes float {
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(50px);
   }
 }
+
 .typewriter {
   font-size: 42px;
   font-weight: 800;
@@ -156,21 +167,25 @@ body {
 
 @keyframes blink {
   0% {
-    border-color: #38D400;
+    border-color: #57a85C;
   }
+
   50% {
     border-color: transparent;
   }
+
   100% {
-    border-color: #38D400;
+    border-color: #57a85C;
   }
 }
+
 .process {
   padding: 120px 0;
   background: #000000;
   text-align: center;
-  background: radial-gradient(circle at bottom, #00C853, #ffffff);
+  background: radial-gradient(circle at bottom, #57a85C, #ffffff);
 }
+
 .process .section-title {
   font-size: 40px;
   margin-bottom: 16px;
@@ -178,10 +193,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .process .section-subtitle {
   color: #000000;
   margin-bottom: 60px;
 }
+
 .process .process-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
@@ -189,6 +206,7 @@ body {
   gap: 25px;
   margin-top: 60px;
 }
+
 .process .process-card {
   background: rgba(255, 255, 255, 0.89);
   border: 2px solid rgb(36, 35, 35);
@@ -198,10 +216,12 @@ body {
   position: relative;
   width: 80%;
 }
+
 .process .process-card:hover {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
+
 .process .process-card .step {
   font-size: 14px;
   font-weight: 600;
@@ -209,11 +229,13 @@ body {
   margin-bottom: 15px;
   letter-spacing: 2px;
 }
+
 .process .process-card h3 {
   margin-bottom: 15px;
   font-size: 22px;
-  color: #00C853;
+  color: #57a85C;
 }
+
 .process .process-card p {
   color: #000000;
   font-size: 15px;
@@ -224,6 +246,7 @@ body {
   padding: 140px 0;
   text-align: center;
 }
+
 .contact .section-title {
   font-size: 42px;
   margin-bottom: 20px;
@@ -231,11 +254,13 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .contact .section-subtitle {
   color: #000000;
   margin-bottom: 50px;
   font-size: 18px;
 }
+
 .contact .btn-whatsapp {
   display: inline-block;
   padding: 18px 40px;
@@ -243,11 +268,12 @@ body {
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 1px;
-  background: linear-gradient(90deg, #00C853);
+  background: linear-gradient(90deg, #57a85C);
   color: rgb(0, 0, 0);
   transition: 0.3s ease;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
+
 .contact .btn-whatsapp:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 30px rgb(255, 255, 255);
@@ -258,17 +284,20 @@ body {
   background: black;
   text-align: center;
 }
+
 .projects .section-title-p {
   color: rgb(255, 255, 255);
   margin: 10px;
   font-size: 42px;
 }
+
 .projects .section-subtitle-p {
   color: white;
   margin-bottom: 60px;
   padding: 5px;
   margin: 5px;
 }
+
 .projects .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 380px));
@@ -276,6 +305,7 @@ body {
   gap: 30px;
   margin-top: 10px;
 }
+
 .projects .project-card {
   background: rgba(255, 255, 255, 0.89);
   border-radius: 12px;
@@ -283,29 +313,35 @@ body {
   transition: 0.4s ease;
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
+
 .projects .project-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
+
 .projects .project-card .project-image img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   display: block;
 }
+
 .projects .project-card .project-info {
   padding: 25px;
   background-color: #000000;
 }
+
 .projects .project-card .project-info h3 {
   margin-bottom: 10px;
   color: rgb(255, 255, 255);
 }
+
 .projects .project-card .project-info p {
   color: white;
   font-size: 14px;
   margin-bottom: 20px;
 }
+
 .projects .project-card .project-info .project-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -317,6 +353,7 @@ body {
   transition: 0.3s ease;
   border: 2px solid rgb(255, 255, 255);
 }
+
 .projects .project-card .project-info .project-btn:hover {
   opacity: 0.85;
 }
@@ -327,6 +364,7 @@ body {
   color: white;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
+
 .footer .footer-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -335,24 +373,28 @@ body {
   background-color: rgba(60, 61, 61, 0.315);
   border-radius: 30px;
 }
+
 .footer h3 {
   font-size: 22px;
   margin-bottom: 15px;
   margin: 15px;
-  color: #00C853;
+  color: #57a85C;
 }
+
 .footer h4 {
   margin-bottom: 15px;
   margin: 15px;
-  color: #00C853;
+  color: #57a85C;
   font-size: 16px;
 }
+
 .footer p {
   color: white;
   font-size: 14px;
   margin-bottom: 20px;
   margin: 15px;
 }
+
 .footer a {
   display: block;
   text-decoration: none;
@@ -361,10 +403,12 @@ body {
   margin: 15px;
   transition: 0.3s ease;
 }
+
 .footer a:hover {
   color: white;
   transform: translateX(5px);
 }
+
 .footer .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding-top: 20px;
@@ -373,14 +417,16 @@ body {
   align-items: center;
   font-size: 14px;
 }
+
 .footer .footer-bottom .back-to-top {
   background: linear-gradient(90deg, #000000, #000000);
-  color: #00C853;
+  color: #57a85C;
   padding: 8px 14px;
   border-radius: 6px;
   text-decoration: none;
   transition: 0.3s ease;
 }
+
 .footer .footer-bottom .back-to-top:hover {
   opacity: 1;
 }
@@ -389,6 +435,7 @@ body {
   padding: 120px 10%;
   background: #ffffff;
 }
+
 .about .about-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -398,6 +445,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 .about .about-title {
   font-size: 42px;
   font-weight: 800;
@@ -405,12 +453,14 @@ body {
   margin-left: 15px;
   color: rgb(0, 0, 0);
 }
+
 .about .about-description {
   color: #181818;
   line-height: 1.7;
   margin-bottom: 40px;
   margin-left: 15px;
 }
+
 .about .about-stats {
   display: flex;
   justify-content: center;
@@ -418,19 +468,23 @@ body {
   gap: 50px;
   margin-top: 30px;
 }
+
 .about .about-stats .stat h3 {
   font-size: 32px;
-  color: #00C853;
+  color: #57a85C;
 }
+
 .about .about-stats .stat p {
-  color: #00C853;
+  color: #57a85C;
   font-size: 14px;
   text-decoration: underline;
 }
+
 .about .about-visual {
   display: flex;
   justify-content: center;
 }
+
 .about .about-visual .about-box {
   width: 300px;
   height: 300px;
@@ -444,10 +498,12 @@ body {
     grid-template-columns: 1fr !important;
     text-align: center;
   }
+
   .about-stats {
     justify-content: center;
   }
 }
+
 .reveal-left,
 .reveal-right {
   opacity: 0;
