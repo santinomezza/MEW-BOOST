@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Animación al hacer Scroll
   const elements = document.querySelectorAll(".reveal-left, .reveal-right");
 
   function revealOnScroll() {
@@ -18,6 +19,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", revealOnScroll);
   revealOnScroll();
+
+  // Menú Hamburguesa Responsivo
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+  const navItems = document.querySelectorAll(".nav-links a");
+
+  if(hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+
+    // Cerrar menú al apretar un link
+    navItems.forEach(item => {
+      item.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navLinks.classList.remove("active");
+      });
+    });
+  }
 
   // Animación de Contadores (Count Up) para ser muchísimo más profesional
   const counters = document.querySelectorAll('.counter-up');

@@ -59,6 +59,12 @@
     gap: 20px;
     justify-content: center;
     animation: fadeUp 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 15px;
+      a { width: 100%; text-align: center; }
+    }
 
     a {
       padding: 16px 32px;
