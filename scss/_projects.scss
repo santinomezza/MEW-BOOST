@@ -1,6 +1,6 @@
 .projects {
   padding: 120px 0;
-  background: black;
+  background: transparent;
   text-align: center;
 
 .section-title-p {
@@ -35,12 +35,12 @@
 
   &::before {
     left: 0;
-    background: linear-gradient(to right, black, transparent);
+    background: linear-gradient(to right, $bg-dark, transparent);
   }
 
   &::after {
     right: 0;
-    background: linear-gradient(to left, black, transparent);
+    background: linear-gradient(to left, $bg-dark, transparent);
   }
 }
 
@@ -68,15 +68,16 @@
 
     .project-info {
       padding: 25px;
-      background-color: #000000;
+      background: $card-bg;
+      border-top: 1px solid $card-border;
 
       h3 {
         margin-bottom: 10px;
-        color: rgb(255, 255, 255);
+        color: $text-light;
       }
 
       p {
-        color: white;
+        color: $text-muted;
         font-size: 14px;
         margin-bottom: 20px;
       }
@@ -85,12 +86,13 @@
         display: inline-block;
         padding: 10px 20px;
         background: $primary-gradient;
-        color: rgb(255, 255, 255);
+        color: #000;
         text-decoration: none;
         border-radius: 6px;
+        font-weight: 600;
         font-size: 14px;
         transition: 0.3s ease;
-        border: 2px solid rgb(255, 255, 255);
+        box-shadow: 0 4px 15px rgba(0,200,83,0.3);
 
         &:hover {
           opacity: 0.85;

@@ -1,35 +1,83 @@
 .navbar {
   position: fixed;
-  width: 100%;
-  padding: 20px 8%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.637);
-  backdrop-filter: blur(10px);
+  background: rgba(15, 15, 15, 0.7); 
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
   z-index: 1000;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+  transition: all 0.3s ease;
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 800;
+  font-size: 22px;
+  color: $text-light;
+  letter-spacing: -0.5px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
 }
 
 nav a {
-  margin-left: 30px;
   text-decoration: none;
-  color: $text-light;
+  font-size: 15px;
+  font-weight: 500;
+  color: $text-muted;
   transition: $transition;
-  background-color: black;
-  border-radius: 25px;
-  padding: 10px;
+  position: relative;
+  
   &:hover {
-    color: white;
+    color: $text-light;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: $primary-1;
+    transition: $transition;
+  }
+  
+  &:hover::after {
+    width: 100%;
+    box-shadow: 0 0 10px $primary-1;
   }
 }
 
-body {
-  padding-top: 5px;
+nav a[href="#contacto"] {
+  background: rgba(0, 200, 83, 0.1);
+  color: $primary-1;
+  padding: 10px 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 200, 83, 0.3);
+  font-weight: 600;
+  
+  &:hover {
+    background: $primary-gradient;
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 200, 83, 0.4);
+    text-shadow: none;
+  }
+  
+  &::after {
+    display: none;
+  }
 }

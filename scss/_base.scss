@@ -8,7 +8,11 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: $bg-dark;
+  background-color: $bg-dark;
+  background-image:
+    linear-gradient(to right, $bg-grid 1px, transparent 1px),
+    linear-gradient(to bottom, $bg-grid 1px, transparent 1px);
+  background-size: 40px 40px;
   color: $text-light;
   overflow-x: hidden;
 }
@@ -18,18 +22,27 @@ section {
   text-align: center;
 }
 
-.logo{
-  background-color: rgba(0, 0, 0, 0.925);
-  border-radius: 25px;
-  padding: 10px;
-  color: #00C853;
+.logo {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid $card-border;
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: $text-light;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
-.h2secciones{
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.925);
-  border-radius: 15px;
-  padding: 5px 15px 5px 10px; 
-  margin: auto;
-  color: #000;
+.h2secciones {
+  display: inline-block;
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #fff, $primary-1, #fff);
+  background-size: 200% auto;
+  animation: gradientPan 3s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  padding: 0;
 }

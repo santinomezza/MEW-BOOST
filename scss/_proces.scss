@@ -1,13 +1,15 @@
 .process {
   padding: 120px 0;
-  background: $bg-secondary;
+  background: transparent;
   text-align: center;
-  background: radial-gradient(circle at bottom , #00C853, $bg-dark);
   .section-title {
     font-size: 40px;
     margin-bottom: 16px;
-    background: $primary-gradient;
+    background: linear-gradient(90deg, #000, #00C853, #000);
+    background-size: 200% auto;
+    animation: gradientPan 3s linear infinite;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
@@ -25,16 +27,19 @@
 }
   .process-card {
     background: $card-bg;
-    border: 2px solid rgb(36, 35, 35);
-    padding: 20px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid $card-border;
+    padding: 30px;
     border-radius: 12px;
     transition: $transition;
     position: relative;
     width: 80%;
 
     &:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 0 30px rgba(0, 200, 83, 0.6);
+      border-color: #00C853;
     }
 
     .step {

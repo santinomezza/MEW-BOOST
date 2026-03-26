@@ -6,8 +6,11 @@
   .section-title {
     font-size: 42px;
     margin-bottom: 20px;
-    background: $primary-gradient;
+    background: linear-gradient(90deg, #000, #00C853, #000);
+    background-size: 200% auto;
+    animation: gradientPan 3s linear infinite;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
@@ -20,14 +23,14 @@
   .btn-whatsapp {
     display: inline-block;
     padding: 18px 40px;
-    border-radius: 8px;
+    border-radius: 12px;
     font-weight: 600;
     text-decoration: none;
     letter-spacing: 1px;
-    background: linear-gradient(90deg, #00C853, );
-    color: rgb(0, 0, 0);
+    background: $primary-gradient;
+    color: #000;
     transition: 0.3s ease;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 200, 83, 0.3);
 
     &:hover {
       transform: translateY(-4px);

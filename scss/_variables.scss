@@ -1,12 +1,16 @@
-$bg-dark: #ffffff;
-$bg-secondary: #000000;
-$card-bg: rgba(255, 255, 255, 0.89);
+// Paleta Premium (Grid & Neon Green)
+$bg-dark: #050505;          
+$bg-secondary: #0a0a0a;     
+$bg-grid: rgba(255, 255, 255, 0.04); 
 
-$primary-1: #000000;
-$primary-2: #000000;
+$card-bg: rgba(20, 20, 20, 0.6); 
+$card-border: rgba(255, 255, 255, 0.08);
 
-$primary-gradient: linear-gradient(90deg, $primary-1, $primary-2);
+$primary-1: #00C853;        
+$primary-2: #38D400;        
 
-$text-light: #00C853;
-$text-muted: #000000;
-$transition: all 0.3s ease;
+$primary-gradient: linear-gradient(135deg, $primary-1, $primary-2);
+
+$text-light: #F8F9FA;
+$text-muted: #8B949E;
+$transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);

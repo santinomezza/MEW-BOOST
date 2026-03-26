@@ -1,24 +1,91 @@
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at top , #00C853, $bg-dark);
+
+  // Glow Orbs en el fondo
+  &::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0, 200, 83, 0.15) 0%, rgba(0,0,0,0) 70%);
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(60px);
+    z-index: -1;
+    animation: float 8s ease-in-out infinite alternate;
+  }
+
+  .hero-content {
+    max-width: 900px;
+    padding: 0 20px;
+    z-index: 2;
+  }
 
   h1 {
-    font-size: 52px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #000000;
-    animation: fadeUp 1.5s ease forwards;
+    display: inline-block;
+    font-size: clamp(40px, 6vw, 72px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -1.5px;
+    
+    background: linear-gradient(90deg, #fff, $primary-1, #fff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards, gradientPan 3s linear infinite;
   }
 
   p {
-    color: rgb(0, 0, 0);
-    margin-bottom: 30px;
-    animation: fadeUp 2.5s ease forwards;
+    font-size: 20px;
+    color: $text-muted;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+    animation: fadeUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    animation: fadeUp 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+    a {
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: $transition;
+    }
+
+    .btn-primary {
+      background: $primary-gradient;
+      color: #000;
+      box-shadow: 0 4px 20px rgba(0, 200, 83, 0.3);
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(0, 200, 83, 0.5);
+      }
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: $text-light;
+      border: 1px solid $card-border;
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-3px);
+      }
+    }
   }
 }
