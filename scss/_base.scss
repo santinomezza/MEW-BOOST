@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: 'Inter', sans-serif;
   background-color: $bg-dark;
   background-image:
@@ -15,6 +15,7 @@ body {
   background-size: 40px 40px;
   color: $text-light;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 section {
@@ -23,6 +24,7 @@ section {
   
   @media (max-width: 768px) {
     padding: 80px 5%;
+    overflow-x: hidden;
   }
 }
 

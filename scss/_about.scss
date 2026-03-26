@@ -29,9 +29,10 @@
 
 .about-stats {
   display: flex;
+  flex-wrap: wrap; // 👈 permite que los items bajen si no caben
   justify-content: center;   // 👈 centra todo el grupo
   align-items: center;
-  gap: 50px;
+  gap: 30px; // reduje un poco el gap para vista móvil
   margin-top: 30px;
 
     .stat {
@@ -54,7 +55,8 @@
     justify-content: center;
 
     .about-box {
-      width: 300px;
+      width: 100%;
+      max-width: 300px;
       height: 300px;
       border: 1px solid $primary-1;
       border-radius: 20px;
