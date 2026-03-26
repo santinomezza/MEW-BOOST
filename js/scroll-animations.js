@@ -74,5 +74,22 @@ document.addEventListener("DOMContentLoaded", function () {
   counters.forEach(counter => {
     counterObserver.observe(counter);
   });
+
+  // ========================
+  // CUSTOM CURSOR LOGIC
+  // ========================
+  const cursor = document.querySelector('.custom-cursor');
+  if (cursor) {
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    const hoverElements = document.querySelectorAll('a, button, .btn, .project-card, .pricing-card');
+    hoverElements.forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+    });
+  }
 });
 
